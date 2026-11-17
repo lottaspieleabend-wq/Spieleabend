@@ -1,0 +1,23 @@
+# macOS / iCloud
+.DS_Store
+*.icloud
+._*
+
+# Node (nur falls das Firebase-Bundle hier statt in einem leeren Ordner gebaut wird – nicht empfohlen)
+node_modules/
+package-lock.json
+npm-debug.log*
+
+# Lokale Claude-Code-Einstellungen
+.claude/settings.local.json
+
+# Editor / Temp
+.vscode/
+.idea/
+*.log
+*.tmp
+
+# Lokale Projektnotizen (nicht veröffentlichen)
+CLAUDE.md
+docs/
+.claude/
