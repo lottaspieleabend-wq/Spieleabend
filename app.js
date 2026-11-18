@@ -2,7 +2,7 @@
 
 /* ---------- Grundlagen ---------- */
 const KEY = 'spieleabend.v1';
-const APP_VERSION = 1;
+const APP_VERSION = 2;
 
 const TYPES = {
   high:       { label: 'Höchste Punkte gewinnen',       short: 'Punkte ↑',    desc: 'z. B. Kniffel, Qwixx – wer mehr Punkte hat, gewinnt' },
@@ -903,13 +903,16 @@ document.addEventListener('contextmenu', e => { if (!e.target.closest('input')) 
 
 // Hinweis, falls die App noch im Browser statt vom Homescreen läuft
 const isStandalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+const isIOS = !/Android/i.test(navigator.userAgent) && (/iPhone|iPad|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1));
 function installHint() {
   let dismissed = false;
   try { dismissed = localStorage.getItem('spieleabend.hint') === '1'; } catch (e) { /* ignore */ }
   if (isStandalone || dismissed) return '';
   return `<div class="card install">
     <span class="emoji">📲</span>
-    <p><b>Als App installieren:</b> In Safari auf Teilen tippen → „Zum Home-Bildschirm“. Dann läuft sie im Vollbild ohne Browserleiste.</p>
+    <p><b>Als App installieren:</b> ${isIOS
+      ? 'In Safari auf Teilen tippen → „Zum Home-Bildschirm“.'
+      : 'In Chrome oben rechts auf ⋮ tippen → „App installieren“ (oder „Zum Startbildschirm hinzufügen“).'} Dann läuft sie im Vollbild ohne Browserleiste.</p>
     <button class="icon-btn sm ghost" onclick="hideHint()" aria-label="Ausblenden">✕</button>
   </div>`;
 }

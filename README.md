@@ -6,13 +6,13 @@ Läuft ohne eigenen Server über GitHub Pages und lässt sich aufs Handy install
 **App:** https://lottaspieleabend-wq.github.io/Spieleabend/
 
 ## Loslegen (einmalig, jede Person auf ihrem Handy)
-1. Die App-Adresse oben in **Safari** öffnen.
-2. Teilen-Symbol → **„Zum Home-Bildschirm“**. Ab jetzt die App über das Icon starten (Vollbild, offline nutzbar).
+1. Die App-Adresse oben in **Chrome** öffnen (Android).
+2. Oben rechts auf **⋮** → **„App installieren“** (je nach Version auch „Zum Startbildschirm hinzufügen“). Ab jetzt die App über das Icon starten (Vollbild, offline nutzbar).
 3. In der App unten auf **Mehr**, E-Mail-Adresse und ein eigenes Passwort (mind. 6 Zeichen) eingeben und **„Neues Konto erstellen“** tippen. Später reicht „Anmelden“.
 4. **Eine** Person (z. B. Lotta) tippt unter *Mehr → Gemeinsam spielen* auf **„Gruppe erstellen“** und schickt den 6-stelligen Einladungscode an die andere Person (7 Tage gültig).
 5. Die andere Person gibt den Code unter *Mehr → Gemeinsam spielen* ins Feld „Einladungscode“ ein und tippt **„Beitreten“**. Fertig – ab jetzt seht ihr beide dieselben geteilten Spiele und Partien.
 
-Android: Chrome → Menü → „App installieren“.
+iPhone: Adresse in Safari öffnen → Teilen → „Zum Home-Bildschirm“.
 
 ## Features
 - Spiele anlegen mit Emoji und Wertungsart:
